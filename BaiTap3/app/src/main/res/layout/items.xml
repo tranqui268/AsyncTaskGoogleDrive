@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/baseline_movie_24"/>
+
+    <TextView
+        android:id="@+id/titleMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@id/imageView"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download"
+        android:layout_toEndOf="@id/titleMusic"
+        android:backgroundTint="#B5ADAD"
+        android:layout_marginRight="10dp"
+        android:onClick="downloadClick"/>
+
+</RelativeLayout>
